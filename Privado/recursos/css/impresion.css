@@ -1,0 +1,42 @@
+div{
+    
+    width:525px; 
+    margin:0 auto;
+    
+}
+
+table{
+    
+    margin-top:10px; 
+    width:525px; 
+    border-spacing:20px; 
+    border:1px solid #000; 
+    text-align:center;
+    
+}
+
+th{
+    
+    width:75px;
+    
+}
+
+th.equipo{
+    
+    width:300px; 
+    
+}
+
+td.borde{
+    
+    border:1px solid #000;
+    
+}
+
+.izquierda{
+    
+    text-align:left;
+    
+}
+
+

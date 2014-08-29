@@ -1,0 +1,1431 @@
+
+/* LAYOUT */
+
+@font-face{
+	
+    font-family:'Wish';
+    src: url('font/wishiweretaller.ttf');
+
+	
+}
+
+a:visited{
+    
+    text-decoration:underline;
+    color:#0000FF;
+    
+}
+
+body,ul,h2{
+    
+    margin:0;
+    padding:0;
+    
+}
+
+h1, h3{
+    
+    text-align:center;
+    
+}
+
+h1{
+	
+    font-size:40px;
+	
+}
+
+img{
+
+    border:0;
+
+}
+
+textarea{
+    
+    resize:none;
+    overflow:auto;
+    border-radius:5px;
+    border:2px inset #F0F0F0;
+    display:block;
+    
+}
+
+input[type="text"]{
+    
+   border-radius:5px;
+   border:2px inset #F0F0F0;
+    
+}
+
+#wrap{
+    
+    width:960px;  
+    margin:0 auto;
+}
+
+#contenedor{
+     
+    font-family:'Wish', arial, sans-serif;
+    font-size:13px;
+}
+
+#contenido{
+    
+    margin:30px auto;
+    
+}
+
+#contenedor div ::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+#contenedor div ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+#contenedor div ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#header{
+	
+	background:url(/recursos/img/layout/header.png) 0 0 no-repeat;
+	height:237px;
+	padding:14px 0 0 119px;
+
+}
+
+
+/* END LAYOUT */
+
+
+/* MENU */
+
+/** TOP **/
+
+#menu ul{
+
+	list-style:none;
+	
+}
+
+#menu ul li{
+
+	display:block;
+	text-align:center;
+
+	
+}
+
+#menu ul li a{
+
+	line-height:60px;
+	text-decoration:none;
+	width:135px;
+	font-size:19px;
+	padding:20px 12px 0 65px;
+	margin-left:25px;
+	color:#000;
+	float:left;
+        cursor: pointer;
+	background:url(/recursos/img/layout/menu_item.png) 0 0 no-repeat;
+}
+
+#menu ul li a:hover, #menu ul li a.selected{
+
+	background:url(/recursos/img/layout/menu_select.png) 0 0 no-repeat;
+}
+
+#menu ul li a.selected{
+
+	cursor: default;
+}
+
+#menu ul li a.twotitles{
+
+	line-height:20px;
+	padding:25px 12px 16px 65px;
+
+}
+
+#menu ul li a.twotitles sup{
+
+	float:left;
+	font-size:15px;
+        padding-left:5px;
+
+}
+
+/** END TOP **/
+
+/** BOTTOM **/
+
+#menu_footer{
+    
+    font-family:Arial;
+    text-align:center;
+    display:block;
+    margin:30px;
+}
+
+#menu_footer li {
+    
+    font-family:Helvetica;
+    font-size:12px;
+    display:inline;
+}
+
+#menu_footer a {
+    
+    text-decoration:none;
+    color:black;
+    
+}
+
+#menu_footer a:hover, #menu_footer a.selected{
+    
+    opacity:0.4;
+    cursor:pointer;
+    
+}
+
+/** END BOTTOM **/
+
+/* END MENU */
+
+
+/* CONTENIDO */
+
+/** COMMON **/
+
+#banner{
+	
+    margin-top:10px;
+    height:145px;
+    background:url(/recursos/img/layout/banner.png) bottom left no-repeat;
+	
+}
+
+#banner  ul {
+    
+    padding-top:85px;
+    float:left;
+    
+}
+
+#banner ul li{
+    
+    list-style:none;
+    float:left;
+    display:block;
+    margin-left:5px;
+    height:33px;
+    width:116px;
+    background:url(/recursos/img/layout/boton_banner.png) 0 0 no-repeat;
+    padding:1px 0 0 2px;
+    cursor:pointer;
+    
+}
+
+#banner ul li span{
+    
+    display:block;
+    font-size:14px;
+    text-align:center;
+    padding:7px 8px 7px 0;
+    
+}
+
+#banner ul li a{
+    
+    color:#000;
+    text-decoration:none;
+       
+}
+
+#banner ul li a:hover span{
+    
+    color:#FFF;
+    
+}
+
+#banner ul li img{
+    
+    float:left;
+    
+}
+
+#titulo{
+
+	width:400px;
+	float:right;
+	font-size:18px;
+	height:100px;
+        text-align:center;
+}
+
+#titulo h1#torneo_titulo{
+	
+	font-size:30px;
+        margin:0;
+        text-align:left;
+        padding-left:25px;
+}	
+
+#titulo p{
+	
+	text-align:left;
+        margin-bottom:0;
+}
+
+/** END COMMON **/
+
+/** TORNEOS **/
+
+/*** TABLA ***/
+
+div#torneos{
+    
+    width:864px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+div#torneos h3{
+    
+    text-align:left;
+    padding:0;
+    margin:0;
+    
+}
+
+div#torneos div{
+    
+  padding:30px 10px 0 20px;
+    
+}
+
+
+div#torneos div#lista{
+    
+  padding:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+  max-height:410px;
+  width:861px;
+    
+}
+
+div#torneos div#lista div:hover{
+    
+  opacity:0.6;
+  cursor:pointer;
+    
+}
+
+/*** END TABLA ***/
+
+/*** FILAS ***/
+
+div#torneos div#head{
+    
+  background:url(/recursos/img/torneos/top.png) 0 0 no-repeat;  
+  height:60px;
+  padding-top:60px;
+  
+}
+
+div#torneos div.row_impar{
+    
+  background:url(/recursos/img/torneos/row_impar.png) 0 0 no-repeat;  
+  height:52px; 
+      
+}
+
+div#torneos div.row_par{
+    
+  background:url(/recursos/img/torneos/row_par.png) 0 0 no-repeat;  
+  height:52px; 
+      
+}
+
+div#torneos div#foot_par{
+    
+  background:url(/recursos/img/torneos/footer_par.png) 0 0 no-repeat;  
+  height:269px; 
+      
+}
+
+div#torneos div#foot_impar{
+    
+  background:url(/recursos/img/torneos/footer_impar.png) 0 0 no-repeat;  
+  height:265px; 
+ 
+      
+}
+
+/*** END FILAS ***/
+
+/*** COLUMNAS ***/
+
+
+div#torneos h2#torneo, h3.torneo{
+    
+    width:614px;
+    float:left;
+    
+}
+
+div#torneos h2#estado, h3.estado{
+    
+    width:200px;
+    float:left;
+    
+}
+
+div#torneos h2{
+    
+    font-size:34px;
+    color:white;
+    
+}
+
+div#torneos h3{
+    
+    font-size:20px;
+    
+}
+
+/*** END COLUMNAS ***/
+
+/** END TORNEOS **/
+
+
+/** CONTACTO **/
+
+#contacto{
+        
+     font-family:Arial;
+     font-size:15px;
+     border-spacing:10px;
+        
+}
+
+#contacto td:first-child{
+    
+    max-width:274px;
+    
+}
+
+#contacto input[type="text"]{
+    
+   width:200px;
+    
+}
+
+#contacto textarea{
+    
+   width:200px;
+   height:160px;
+      
+}
+
+#contacto input[type="image"]{
+    
+   
+    cursor:pointer;
+    
+}
+
+/** END CONTACTO **/
+
+/** TORNEO **/
+
+div#torneo{
+    
+    height:917px;
+    
+}
+
+div#torneo h1, div#torneo h3{
+    
+    color:#FFF;
+    
+}
+
+div#torneo #descripcion_premios, div#torneo #datos, div#torneo #menu_torneo{
+    
+    float:left;
+    padding-right:10px;
+    
+}
+
+div#torneo #descripcion_premios > div{
+    
+   background:url(/recursos/img/torneo/descripcion_premio.png) 0 0 no-repeat;
+   height:882px;
+   width:447px;
+   padding-top:5px;
+    
+}
+
+div#torneo #descripcion_premios > div > div{
+    
+  padding:25px 20px;
+  height:615px;
+  font-family:arial,sans-serif;
+    
+}
+
+div#torneo #descripcion_premios > div > div span#premios{
+    
+  display:block;
+  height:25px;
+  padding-top:30px;
+  padding-bottom:10px;
+  margin:10px;
+  text-align:center;
+  border-top:3px dotted #009900;
+  font-size:25px;
+    
+}
+
+div#torneo #descripcion_premios > div > div div{
+    
+  padding:15px;
+  height:230px;
+  overflow-y:auto;
+    
+}
+
+div#torneo #descripcion_premios > div > div div#premio span{
+    
+  padding:15px 0;
+  display:block;
+    
+}
+
+div#torneo #datos, div#torneo #menu_torneo{
+   
+   padding-top:125px;
+    
+}
+
+div#torneo #datos #estado > div span, div#torneo #datos #costo > div span{
+    
+   text-align:center;
+   font-size:22px;
+   display:block;
+   font-family:arial,sans-serif;
+    
+}
+
+div#torneo #datos #estado{
+   
+   background:url(/recursos/img/torneo/estado.png) 0 0 no-repeat;
+   height:160px;
+   width:198px;
+   padding-top:3px;
+    
+}
+
+div#torneo #datos #estado > div{
+    
+   overflow-y:auto;
+   height:100px;
+   padding:31px;
+    
+}
+
+div#torneo #datos #costo{
+   
+   background:url(/recursos/img/torneo/costo.png) 0 0 no-repeat;
+   height:159px;
+   width:198px;
+   padding-top:3px;
+   margin-top:25px;
+    
+}
+
+div#torneo #datos #costo > div{
+    
+   overflow-y:auto;
+   height:100px;
+   padding:30px;
+    
+}
+
+div#torneo #datos #fecha{
+   
+   background:url(/recursos/img/torneo/fechas.png) 0 0 no-repeat;
+   height:205px;
+   width:198px;
+   padding-top:3px;
+   margin-top:25px;
+    
+}
+
+div#torneo #datos #fecha > div{
+    
+   overflow-y:auto;
+   height:175px;
+   padding:30px 10px;
+    
+}
+
+div#torneo #datos #fecha > div span{
+    
+   text-align:center;
+   font-size:18px;
+   display:block;
+   font-family:arial,sans-serif;
+   padding-top:10px;
+    
+}
+
+div#torneo #menu_torneo ul li{
+    
+    list-style:none;
+    display:block;
+    margin-bottom:5px;
+    height:51px;
+    width:176px;
+    background:url(/recursos/img/torneo/menu/boton.png) 0 0 no-repeat;
+    padding:3px 0 0 4px;
+    cursor:pointer;
+    
+}
+
+
+div#torneo #menu_torneo ul li.desactivado{
+    
+    opacity:0.5;
+    cursor:default;
+    
+}
+
+div#torneo #menu_torneo ul li span{
+    
+    padding:10px 20px 13px 49px;
+    display:block;
+    font-size:23px;
+    text-align:center;
+    
+}
+
+div#torneo #menu_torneo ul li a{
+    
+    color:#000;
+    text-decoration:none;
+       
+}
+
+div#torneo #menu_torneo ul li:not(.desactivado) a:hover span{
+    
+    color:#FFF;
+    
+}
+
+
+
+
+div#torneo #menu_torneo ul li img{
+    
+    float:left;
+    
+}
+
+
+/** END TORNEO **/
+
+/** GRUPOS **/
+
+#grupos{
+    
+    padding:20px;
+    
+}
+
+#grupos > div{
+    
+    background:url(/recursos/img/torneo/grupo.png) 0 0 no-repeat;
+    height:303px;
+    width:208px;
+    padding:5px;
+    float:left;
+    margin:0 6px;
+    
+}
+
+#grupos > div h3{
+    
+    color:#FFF;
+    font-size:24px;
+    padding-bottom:10px;
+    
+}
+
+#grupos > div div span{
+    
+    display:block;
+    font-family:arial;
+    font-size:18px;
+    padding:22px 0 0 7px;
+}
+
+/** END GRUPOS **/
+
+/** PUNTOS **/
+
+#puntos{
+    
+    width:607px;
+    margin:0 auto;
+}
+
+#puntos h2, #puntos h3{
+    
+    font-family:arial,sans-serif;
+    float:left;
+    text-align:center;
+}
+
+#puntos h1{
+    
+    color:#FFF;
+    
+}
+
+
+#puntos .head_puntos{
+    
+    background:url(/recursos/img/torneo/puntos/header.png) 0 0 no-repeat;
+    height:175px;
+    padding:1px 15px;
+    margin-top:50px;
+    font-size:14px;
+      
+}
+
+#puntos .equipo{
+    
+    width:360px;
+    text-align:left;
+    
+}
+
+#puntos .goles_favor{
+    
+    width:70px;
+      
+}
+
+#puntos .goles_contra{
+    
+    width:70px;
+      
+}
+
+#puntos .puntos{
+    
+    width:70px;
+      
+}
+
+.head_puntos > div{
+    
+    padding-top:35px;
+    
+}
+
+#puntos > div:not(.head_puntos){
+    
+    padding:5px 15px;
+    height:47px;
+    
+}
+
+#puntos .par {
+    
+    background:url(/recursos/img/torneo/puntos/equipo.png) 0 0 no-repeat;
+    height:57px;
+}
+
+/** END PUNTOS **/
+
+/** PRIMERA FASE **/
+
+
+#descripcion_partido{
+    
+    width:263px;
+    height:220px;
+    background:url(/recursos/img/torneo/descripcion_partido.png) 0 0 no-repeat;
+    padding:0 17px 0 74px;
+    position:absolute;
+    font-family:arial,sans-serif;
+    cursor:pointer;
+    
+}
+
+#descripcion_partido > div{
+    
+    height:160px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    cursor:default;
+    border:3px #FFF double;
+    border-radius:5px;  
+    padding:0 10px;
+    
+}
+
+#descripcion_partido p:not(#cerrar){
+    
+    float:left;
+    cursor:text;
+    word-break:break-word;
+    word-wrap:break-word;
+    
+}
+
+#descripcion_partido p#detalle{
+    
+    width:230px;
+    
+}
+
+#descripcion_partido p#cerrar{
+    
+    display:none;
+    color:#FFF;
+    float:right;     
+    
+}
+
+#descripcion_partido p#cerrar:hover{
+    
+    color:#FF0000;   
+    text-decoration:underline;
+    
+}
+
+#descripcion_partido #cancha{
+    
+    float:left;
+
+}
+
+/** END PRIMERA FASE **/
+
+/** ROJO **/
+
+#rojo{
+    
+    width:849px;
+    margin:0 auto;
+}
+
+#rojo h2, #rojo h3{
+    
+    font-family:arial,sans-serif;
+    float:left;
+    text-align:center;
+}
+
+#rojo h1{
+    
+    color:#FFF;
+    font-size:45px;
+    
+}
+
+
+#rojo .head{
+    
+    background:url(/recursos/img/torneo/head_rojo/header.png) 0 0 no-repeat;
+    height:194px;
+    padding:1px 25px;
+    margin-top:50px;
+    font-size:14px;
+      
+}
+
+#rojo .equipo{
+    
+    width:350px;
+    text-align:left;
+    
+}
+
+#rojo .jugador{
+    
+    width:330px;
+    text-align:left;
+      
+}
+
+#rojo .goles{
+    
+    width:115px;
+      
+}
+
+#rojo .sanciones{
+    
+    width:38px;
+      
+}
+
+#rojo .head > div{
+    
+    padding-top:20px;
+    
+}
+
+#rojo > div.select:hover{
+    
+    opacity:0.5;
+    cursor:pointer;
+    
+}
+
+#rojo > div:not(.head){
+    
+    padding:8px 25px;
+    height:49px;
+    
+}
+
+
+#rojo .titulo{
+    
+    padding-top:15px;
+    
+}
+
+#rojo .par {
+    
+    background:url(/recursos/img/torneo/head_rojo/par.png) 0 0 no-repeat;
+    height:65px;
+}
+
+#rojo .goleadores  {
+    
+    background:url(/recursos/img/torneo/head_rojo/goleadores_impar.png) 0 0 no-repeat;
+    height:122px !important; 
+}
+
+#rojo .primera_fase_grupo{
+    
+    width:799px;
+    
+}
+
+#rojo .equipo_primera_fase{
+    
+    width:170px;
+    min-height:1px;
+    
+}
+
+#rojo .fecha{
+    
+    width:260px;
+    padding-left:80px;
+    padding-right:50px;
+    text-align:center;
+
+      
+}
+
+#rojo .fecha:not(.titulo){
+    
+    font-size:13px;
+    padding-top:5px;
+    
+}
+
+#rojo .goles_partido{
+    
+    width:20px;
+    min-height:1px;
+    
+}
+
+#rojo .goleadores.par {
+    
+    background:url(/recursos/img/torneo/head_rojo/goleadores_par.png) 0 0 no-repeat;
+    
+}
+
+#rojo .faltas  {
+    
+    background:url(/recursos/img/torneo/head_rojo/faltas_impar.png) 0 0 no-repeat;
+    height:122px !important; 
+}
+
+#rojo .faltas.par {
+    
+    background:url(/recursos/img/torneo/head_rojo/faltas_par.png) 0 0 no-repeat;
+    
+}
+
+#rojo .primera_fase  {
+    
+    background:url(/recursos/img/torneo/head_rojo/primera_fase.png) 0 0 no-repeat;
+    height:122px !important; 
+}
+
+
+/** END ROJO **/
+
+
+/** LLAVES **/
+
+#llave_cuatro{
+    
+    width:857px;
+    height:404px;
+    background:url(/recursos/img/torneo/llaves/llave_cuatro.png) 0 0 no-repeat;
+    margin:0 auto;
+    
+}
+
+#llave_ocho{
+    
+    width:857px;
+    height:386px;
+    background:url(/recursos/img/torneo/llaves/llave_ocho.png) 0 0 no-repeat;
+    margin:0 auto;
+    
+}
+
+#llave_dieciseis{
+    
+    width:857px;
+    height:562px;
+    background:url(/recursos/img/torneo/llaves/llave_dieciseis.png) 0 0 no-repeat;
+    margin:0 auto;
+    
+}
+
+/*** CUATRO ***/
+
+#llave_cuatro #llave{
+    
+   padding:45px 0;
+   margin:auto;
+   width:665px;
+   padding-left:3px;
+   font-family:arial, san-serif;
+    
+}
+
+
+#llave_cuatro #llave .box{
+
+    width:150px;
+    float:right;
+    cursor:pointer;
+    
+}
+
+#llave_cuatro #llave .box:first-child{
+    
+    float:left;
+    
+}
+
+#llave_cuatro #llave div.equipo{
+    
+    height:29px;
+    
+}
+
+#llave_cuatro #llave div.centro{
+    
+    width:311px;
+    margin:0 auto;
+    
+}
+
+
+#llave_cuatro #llave div.equipo p{
+    
+    float:right;
+    width:10%;
+    font-size:11px;
+    text-align:right;
+    padding-right:5%;
+    margin-bottom:0;
+    margin-top:7px;
+    
+}
+
+#llave_cuatro #llave div.equipo p:first-child{
+    
+    float:left;
+    width:75%;
+    padding-left:5%;
+    text-align:left;
+    
+}
+
+
+#llave_cuatro #llave div.medio{
+    
+     height:69px;
+    
+}
+
+
+/*** END CUATRO ***/
+
+/*** OCHO ***/
+
+#llave_ocho #llave{
+    
+    padding:32px 0;
+    margin:auto;
+    width:809px;
+    font-family: arial, san-serif;
+    
+}
+
+
+#llave_ocho #llave .box{
+
+    width:120px;
+    float:right;
+    cursor:pointer;
+    height:22px;
+}
+
+#llave_ocho #llave .box:first-child{
+    
+    float:left;
+    
+}
+
+#llave_ocho #llave > div{
+    
+    height:22px;
+    
+}
+
+#llave_ocho #llave > div.equipo_arriba{
+    
+    margin-bottom:6px;
+    
+}
+
+#llave_ocho #llave > div.equipo_abajo{
+    
+    margin-top:14px;
+    
+}
+
+#llave_ocho #llave > div.equipo_medio{
+    
+    
+    
+}
+
+
+#llave_ocho #llave > div.equipo_final{
+    
+     margin:19px 0 27px 0;
+    
+}
+
+#llave_ocho #llave > div.equipo_tercer_mejor{
+    
+     margin-top:14px;
+    
+}
+
+#llave_ocho #llave > div div.semi_centro{
+    
+    width:525px;
+    margin:0 auto;
+    
+}
+
+#llave_ocho #llave > div > div.centro{
+    
+    width:245px;
+    margin:0 auto;
+    
+}
+
+#llave_ocho #llave > div.equipo_tercer_mejor > div.segundo{
+    
+    float:left;
+    margin-left:163px;
+    
+}
+
+#llave_ocho #llave > div.equipo_tercer_mejor > div.tercero{
+    
+    float:left;
+    margin-left:5px;
+    
+}
+
+#llave_ocho #llave div p{
+    
+    float:right;
+    width:10%;
+    font-size:11px;
+    text-align:right;
+    padding-right:1%;
+    margin-bottom:0;
+    margin-top:3px;
+    
+}
+
+#llave_ocho #llave div p:first-child{
+    
+    float:left;
+    width:88%;
+    padding-left:1%;
+    text-align:left;
+    
+}
+
+/*** END OCHO ***/
+
+
+/** END LLAVES **/
+
+/** INSCRIPCION **/
+
+#equipo_jugadores{
+    
+    height:600px;
+    width:360px;
+    float:left;
+    
+}
+
+#equipo{
+    
+    background:url(/recursos/img/torneo/inscripcion/equipo.png) 0 0 no-repeat;
+    height:144px;
+    width:270px;
+    margin:0 auto;
+    padding-top:1px;
+    color:white;
+    
+}
+
+#equipo h1{
+    
+    margin:10px 0;
+    
+}
+
+#equipo div table{
+    
+    width:100%;
+    font-family:arial;
+    color:#000;
+    font-size:10px;
+    padding:11px 0 0 18px;
+    
+}
+
+#equipo div table input[type="checkbox"]{
+    
+    margin:2px 0 0 0;
+    
+}
+
+#equipo div table input[type="text"]{
+    
+    width:164px;
+    
+}
+
+#equipo div table tr td:first-child{
+    
+    width:185px;
+    
+}
+
+#equipo div table tr td{
+    
+    vertical-align:middle;
+    
+}
+
+#equipo div table tr td p{
+    
+    float:left;
+    margin:2px;
+    
+}
+
+#lista_jugadores{
+    
+    height:600px;
+    width:600px;
+    float:left;
+    
+}
+
+#jugador{
+    
+    background:url(/recursos/img/torneo/inscripcion/jugador.png) 0 0 no-repeat;
+    height:401px;
+    width:270px;
+    margin:0 auto;
+    margin-top:23px;
+    padding-top:1px;
+    color:white;
+}
+
+#jugador h1{
+    
+    margin:10px 0;
+    
+}
+
+#jugador div{
+    
+    height:250px;
+    padding-top:65px;
+    
+}
+
+#jugador div table{
+    
+    font-family:arial;
+    color:#000;
+    font-size:12px;
+    margin:0 auto;
+    
+}
+
+div#botones{
+    
+   margin:0 auto;
+   width:248px;
+   text-align:center;
+    
+}
+
+#botones span{
+    
+    color:#FFF;
+    text-align:center;
+    background:url(/recursos/img/torneo/inscripcion/btn_inscripcion.png) 0 0 no-repeat;
+    height:28px;
+    width:114px;
+    display:inline-block;
+    line-height:28px;
+    cursor:pointer;
+    
+}
+
+#botones span:hover, #equipo_jugadores input[type=image]:hover{
+    
+    opacity:0.5;
+    
+}
+
+#jugadores_registrados{
+    
+    width:386px;
+    height:327px;
+    margin:0 auto;
+    background:url(/recursos/img/torneo/inscripcion/jugadores.png) 0 0 no-repeat;
+    padding:90px 40px;
+    
+}
+
+#jugadores_registrados div{
+    
+    width:340px;
+    height:215px;
+    margin-left:auto;
+    overflow-y:auto;
+    overflow-x:hidden;
+    
+}
+
+#registros{
+    
+    font-family:arial, sans-serif;
+    font-size:20px;
+    
+}
+
+
+/** END INSCRIPCION **/
+
+/** ACERCA **/
+
+.acerca_texto{
+    
+    font-family:arial, sans-serif;
+    font-size:21px;
+    margin:50px 80px;
+    text-align:justify;
+    
+}
+
+/** END ACERCA **/
+
+
+/* END CONTENIDO */
+
+/* CLASE */
+
+.clear{
+	
+    display:block; 
+    clear:both;
+	
+}
+
+
+.pipe{
+    
+    color:#99ff00;
+    font-size:14px;
+    
+}
+
+.izquierda{
+    
+    text-align:left !important;
+    
+}
+
+.derecha{
+   
+    text-align:right !important;
+    
+}
+
+.error{
+    
+    color:#FF0000;
+    font-size:13px;
+    word-wrap:break-word;
+}
+
+.mensaje{
+    
+    color:#009900;
+    font-size:13px;
+    word-wrap:break-word;
+}
+
+/* END CLASE */

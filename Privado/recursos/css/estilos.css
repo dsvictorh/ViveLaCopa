@@ -1,0 +1,757 @@
+
+/* LAYOUT */
+
+body,ul{
+    
+    margin:0;
+    padding:0;
+    
+}
+
+img{
+
+    border:0;
+
+}
+
+textarea{
+    
+    resize:none;
+    overflow:auto;
+    
+}
+
+select,textarea,input[type="text"],input[type=password]{
+    
+   border-radius:3px;
+   border:inset 2px #F0F0F0;
+    
+}
+
+body{
+    
+    background: #e2e2e2;
+    
+}
+
+#wrap{
+    
+    min-width:1000px;
+
+}
+
+#contenedor{
+    
+    width:100%;  
+    font-family:arial, verdana, sans-serif;
+    font-size:13px;
+}
+
+/* END LAYOUT */
+
+/* MENU */
+
+#menu{
+    
+    background:url(/privado/recursos/img/menu/fondo.gif) repeat-x; 
+    margin-bottom: 20px;
+    list-style:none;
+    height:37px;   
+}
+
+#menu li{
+    
+    list-style:none;   
+    display:block;     
+}
+
+#menu li a{
+    
+    text-decoration: none;
+    padding: 0 0 0 12px;
+    font-weight: bold;
+    line-height: 33px;
+    font-size: 11px;
+    cursor: pointer;
+    height: 40px;
+    float: left;    
+    color: #BBB;  
+}
+
+
+#menu li a:hover,#menu li a.estatico{
+    
+    background:url(/privado/recursos/img/menu/boton.gif) no-repeat;
+    color:#fff;           
+}
+
+#menu li a.estatico{
+    
+    cursor:default;       
+}
+
+#menu li a span{
+    
+    padding: 0 12px 0 2px;
+    display: block;    
+}
+
+
+
+#menu li a:hover span,#menu li a.estatico span{
+ 
+    background:url(/privado/recursos/img/menu/boton.gif) no-repeat right top;
+    color:#fff;   
+}
+
+#menu ul.right li{
+    
+    float:right;   
+}
+
+/* END MENU */
+
+/* CONTENIDO */
+
+#contenido{
+    
+    border-radius:10px;
+    margin:0 auto 20px auto;
+    padding:40px 20px;
+    min-height:500px;
+    background:#BBB;
+    width:90%;      
+}
+
+/** LOGIN **/
+
+#ingresar{
+    
+    margin:10% auto;
+    background:#BBB;
+    width:400px;   
+    height:250px;
+    border-radius:10px;
+}
+
+
+#ingresar #formulario{
+    
+    width:335px;
+    margin:0 auto;
+    padding:5% 0;
+    text-align:left;
+    
+}
+
+#ingresar #formulario input{
+    
+    margin:0;
+    
+}
+
+#ingresar #formulario input[type=text],#ingresar #formulario input[type=password]{
+    
+    width:245px;
+    
+}
+
+#ingresar #formulario input[type=image]{
+    
+    cursor:pointer;
+}
+
+/** END LOGIN **/
+
+
+/** FILTROS DE BUSQUEDA **/
+
+#torneos_filtro{
+    
+    margin: 0 auto;
+    width:88%;
+    max-width:1008px;
+    
+}
+
+#administradores_filtro{
+    
+    margin: 0 auto;
+    width:522px;
+    
+}
+
+#equipos_filtro{
+    
+    margin: 0 auto;
+    width:36%;
+    max-width:427px;
+    
+}
+
+#filtro{
+    
+    text-align:left;
+    float:left;
+    height:30px;
+
+
+}
+
+/** END FILTROS DE BUSQUEDA **/
+
+/** CUSTOM GRID **/
+
+/*** DEFAULT ***/
+
+.custom_grid{
+    
+    border:#0B0B61 solid 1px;
+    border-spacing:0;
+    border-radius:5px;    
+    
+}
+
+.custom_grid tr {
+    
+    height:32px;
+    
+}
+
+
+.custom_grid tr.oscuro{
+    
+    background:#848484;
+    
+}
+
+.custom_grid tr th, .custom_grid tr td.subtitulo{
+    
+    font-size:14px; 
+    font-weight:bold;
+    background:#0B0B61;
+    color:#FFF;
+    min-width:30px;
+    
+}
+
+.custom_grid td.izquierda{
+    
+    padding-left:7px;
+    
+}
+
+.custom_grid td.ultimo_izq{
+    
+    border-bottom-left-radius:5px;
+    
+}
+
+.custom_grid td.ultimo_der{
+    
+    border-bottom-right-radius:5px;
+    
+}
+
+.custom_grid .boton{
+ 
+    width:30px;
+    
+}
+
+.custom_grid .boton img{
+    
+    cursor:pointer;
+    
+}
+
+/*** END DEFAULT ***/
+
+/*** CUSTOM ***/
+
+/**** TABLA ****/
+
+#torneos,#administradores,#equipos,#jugadores{
+    
+    
+    margin:0 auto 10px auto;
+    
+}
+
+
+#grupos .grupo{
+    
+    float:left;
+    margin:0 2% 5% 0;
+}
+
+#asignar_equipos table{
+    
+    margin:0 0 10px 0;
+    width:100%;
+    
+}
+
+.partido{
+    
+    float:left;
+    margin:1%;
+    
+}
+
+/**** END TABLA ****/
+
+/**** COLUMNAS ****/
+
+#administradores tr #nombre,#administradores tr #correo,#administradores tr #torneo{
+    
+    width:150px;
+    
+}
+
+
+#torneos tr #torneo{
+    
+    width:320px;
+    
+}
+
+#torneos tr #estado,#torneos #numero_fases{
+     
+    width:80px; 
+    
+}
+
+#torneos tr #fecha_inicio,#torneos tr #fecha_fin{
+    
+    width:200px; 
+    
+}
+
+#torneos tr #fase{
+    
+    width:50px; 
+    
+}
+
+#equipos tr #nombre{
+    
+    width:250px;
+    
+}
+
+#equipos tr #puntos{
+    
+    width:75px;
+    
+}
+
+#jugadores tr #nombre{
+    
+    width:170px;
+}
+
+#jugadores tr #cedula{
+    
+    width:80px;
+}
+
+#jugadores tr #correo{
+    
+    width:180px;
+}
+
+#jugadores tr #telefono{
+    
+    width:100px;
+}
+
+#grupos .grupo th{
+    
+    width:290px;
+    
+}
+
+#asignar_equipos #nombre, #grupos .grupo .grupo_equipo{
+    
+    width:200px;
+    
+}
+
+
+#asignar_equipos #grupo, #grupos .grupo .puntos{
+    
+    width: 60px;
+}
+
+.partido .equipo{
+    
+    width:125px;
+    
+}
+
+.partido .fecha_hora{
+    
+    width:250px;
+}
+
+.partido .subseccion{
+    
+    height:80px;    
+}
+
+.partido th{
+    
+    font-size:11px;
+    height:35px;
+}
+
+
+/**** END COLUMNAS ****/
+
+/**** AUXILIAR (TAGS AFUERA O ADENTRO PARA EL CUSTOM GRID) ****/
+
+#grupos{
+    
+    float:left;
+    width:70%;
+    
+}
+
+#asignar_equipos{
+    
+    float:right;
+    width:30%;
+    
+}
+
+#asignar_equipos td select{
+    
+    width:40px;
+}
+
+.partido select{
+    
+    width:50px;
+    margin:0;
+}
+
+.partido input[type=text]{
+    
+    width:20px;
+    margin:0;
+    
+}
+
+.partido input[type=text].date{
+    
+    width:66px;
+    
+}
+
+.partido textarea{
+    
+    width:97%;
+    height:77px;
+    
+}
+
+.partido span{
+    
+    display:block;
+    width:397px;
+    height:80px;
+    overflow-y:auto;
+    padding:4px 2px;
+    
+}
+
+/**** END AUXILIAR ****/
+
+/*** END CUSTOM ***/
+
+/** END CUSTOM GRID **/
+
+
+/** AGREGAR TORNEO **/
+
+/*** COLUMNAS ***/
+
+#agregar_torneo td.spacer{
+    
+    width:8px;
+    
+}
+
+
+#agregar_torneo #txt_torneo_detalle, #editar_torneo #txt_torneo_detalle {
+    
+    height:76px;
+      
+}
+
+
+#agregar_torneo #txt_precio_detalle, #editar_torneo #txt_precio_detalle {
+    
+    height:50px;
+      
+}
+
+#agregar_torneo input[type=text], #editar_torneo input[type=text] {
+    
+    width:166px;
+      
+}
+
+#agregar_torneo textarea, #editar_torneo textarea{
+    
+    width:164px;  
+}
+
+#agregar_torneo textarea#txt_reglamento{
+    
+    height:140px;
+    width:200px;
+      
+}
+
+#editar_torneo textarea#txt_reglamento{
+    
+    height:170px;
+    width:200px;
+    
+}
+
+/*** END COLUMNAS ***/
+
+/*** AUXILIARES ***/
+
+#menu_torneo{
+    
+    padding:20px 0 0 55px;
+}
+
+#menu_torneo td{
+    
+    padding:0 4px 0 0;
+    
+}
+
+#menu_torneo input[type=button]{
+    
+    width:85px;
+    font-size:14px;
+    
+    
+}
+
+/*** END AUXILIARES ***/
+
+/** END AGREGAR TORNEO **/
+
+
+/** AGREGAR ADMINISTRADOR **/
+
+/*** COLUMNAS ***/
+
+/*** END COLUMNAS ***/
+
+/*** AUXILIARES ***/
+
+#registrar_administradores input[type=text],#registrar_administradores input[type=password]{
+    
+    width:166px;
+    
+}
+
+#registrar_administradores select{
+    
+    width:170px;
+    
+}
+
+/*** END AUXILIARES ***/
+
+/** END AGREGAR ADMINISTRADORES **/
+
+
+/** CONFIGURACION **/
+
+#configuracion, #reglamento{
+    
+    margin:0 0 0 20px;
+    padding:20px;
+    height:220px;
+    border-radius:10px;
+    background:#E2E2E2;
+    float:left;
+    
+}
+
+#configuracion input[type=text],#configuracion input[type=password]{
+    
+    width:165px;
+}
+
+#reglamento #txt_reglamento{
+    
+    width: 380px;
+    height:85px;
+}
+/** END CONFIGURACION **/
+
+/** EDITAR JUGADOR **/
+
+#editar_jugador, #agregar_jugador{
+
+    position:absolute;
+    width:90%;
+    min-width:910px;
+    top:330px;
+
+}
+
+#editar_jugador div, #agregar_jugador div{
+    
+    width:400px;
+    height:180px;
+    margin:0 auto;
+    padding:10px;
+    border:#848484 solid 1px;
+    border-radius:5px;
+    background:#E2E2E2;
+}
+
+#editar_jugador div table{
+    
+    margin:30px auto 0 auto;
+    vertical-align:middle;
+    
+}
+
+#agregar_jugador div table{
+    
+    vertical-align:middle;
+    
+}
+
+#editar_jugador div table  input[type=text]{
+    
+    width:60px;
+    
+}
+
+#agregar_jugador div table  input[type=text]{
+    
+    width:190px;
+    
+}
+
+#editar_jugador div table tr td, #agregar_jugador div table tr td{
+    
+    height:15px;
+    
+}
+
+
+
+/** END EDITAR JUGADOR **/
+
+/** GLOBALES **/
+
+/*** ID ***/
+
+table#boton_error{
+
+    width:100%;
+
+}
+
+#busqueda{
+    
+    text-align:right;
+    float:right;
+}
+
+/*** END ID ***/
+
+/*** CLASE ***/
+
+.titulo{
+    
+    background:#000055;
+    color:#FFF;
+    border-radius:5px;
+    padding:6px 0;
+    
+}
+
+.float_right{
+    
+    float:right;    
+}
+
+.centrado{
+    
+   text-align:center;
+}
+
+.derecha{
+    
+   text-align:right;
+}
+
+.izquierda{
+    
+   text-align:left;
+}
+
+.error{
+    
+    font-size:12px;
+    color:#FF0000;  
+}
+
+.mensaje{
+    
+    font-size:12px;
+    color:#009900;  
+}
+
+.clear{
+       
+    clear:both;
+}
+
+.wrap{
+    
+    word-wrap:break-word;
+    
+}
+
+td.check{
+    
+    display:block;
+    padding:0 0 2px 0;
+    
+}
+
+table.check{
+    
+    border-spacing:0;
+    
+}
+
+/*** END CLASE ***/
+
+/** END GLOBALES **/
+
+/* END CONTENIDO */
+
+
+
+
+
+
+
+
